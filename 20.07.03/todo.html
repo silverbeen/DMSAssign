@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="./todo.css">
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <div id="root">
+        <div id="todo">
+            <h1 id="title">TO-DO LIST</h1>
+            <div id="todoInputWrap">
+                <input type="text" placeholder="new task" id="todoinput">
+                <button id="add">ADD</button>
+            </div>
+            <div id="listWrap">
+                <ul id="list">
+                    <li class="item">
+                        <img class="itemDelete" onclick="deleteMe(event);" src="./close.svg" alt="delete" title="delete">
+                        <input class="itemCheckbox" type="checkbox" name="checkbox" id="checkbox">
+                        <span class="itemText"></span>
+                    </li>
+                </ul>
+                <div id="clearWrap">
+                    <button id="clear">clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./todo.js"></script>
+        
+</body>
+</html>
